@@ -277,9 +277,11 @@ Set-Cookie: <span class="nv">csrf_token</span><span class="o">=</span>MWZ1fmXXT1
 Vary: Cookie
 X-Csrf-Token: ThVXxAWl2CXRhVHzOz1cd/AnikmAaoS2vfUlA+ZeIdR/cyK6YHKXcIJPCtdHjaF+y587aPXGdpholluHxHWDlg<span class="o">==</span> 
 
-
-
-http -p BHbh --json POST :3000/auth/register <span class="nv">name</span><span class="o">=</span><span class="s2">"myname"</span> <span class="nv">email</span><span class="o">=</span><span class="s2">"myemail@mail.com"</span> <span class="nv">password</span><span class="o">=</span><span class="s2">"password"</span> <span class="nv">confirm_password</span><span class="o">=</span><span class="s2">"password"</span> <span class="nv">customer_token</span><span class="o">=</span><span class="s2">"cus_token"</span> <span class="se">\</span>
+</code></pre>
+<blockquote>
+<p>Use above command to get cookie and X-Csrf-token</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>http -p BHbh --json POST :3000/auth/register <span class="nv">name</span><span class="o">=</span><span class="s2">"myname"</span> <span class="nv">email</span><span class="o">=</span><span class="s2">"myemail@mail.com"</span> <span class="nv">password</span><span class="o">=</span><span class="s2">"password"</span> <span class="nv">confirm_password</span><span class="o">=</span><span class="s2">"password"</span> <span class="nv">customer_token</span><span class="o">=</span><span class="s2">"cus_token"</span> <span class="se">\</span>
 Cookie:<span class="s2">"csrf_token=MWZ1fmXXT1VTylskfLD9CTu4sSF1rPIu1WN+hCIrokI="</span> <span class="se">\</span>
 <span class="s2">"X-Csrf-Token"</span>:<span class="s2">"ThVXxAWl2CXRhVHzOz1cd/AnikmAaoS2vfUlA+ZeIdR/cyK6YHKXcIJPCtdHjaF+y587aPXGdpholluHxHWDlg=="</span>
 
@@ -392,8 +394,11 @@ Date: Tue, 09 Oct 2018 20:30:11 GMT
 Set-Cookie: <span class="nv">csrf_token</span><span class="o">=</span>rZyuxltLf9nRaMs/b2bzHqmkhqeCfYobMSD7IOZ0JRg<span class="o">=</span>; Max-Age<span class="o">=</span>31536000
 Vary: Cookie
 X-Csrf-Token: 5FD7JCX0fxTV3s2tzpxub8XHdlpJIuVS1i2jpoiW6mxJzFXifr8AzQS2BpKh+p1xbGPw/ctfb0nnDViGbuLPdA<span class="o">==</span>
-
-
+</code></pre>
+<blockquote>
+<p>Use above command to get cookie and X-Csrf-token</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>
 http -p BHbh POST https://manam.ir/auth/login <span class="nv">email</span><span class="o">=</span><span class="s2">"myemail@mail.com"</span> <span class="nv">password</span><span class="o">=</span><span class="s2">"password"</span> <span class="nv">cusromer_token</span><span class="o">=</span><span class="s2">"cus_token"</span><span class="se">\</span>
  Cookie:<span class="s2">"csrf_token=rZyuxltLf9nRaMs/b2bzHqmkhqeCfYobMSD7IOZ0JRg="</span> <span class="se">\</span>
 <span class="s2">"X-Csrf-Token"</span>:<span class="s2">"5FD7JCX0fxTV3s2tzpxub8XHdlpJIuVS1i2jpoiW6mxJzFXifr8AzQS2BpKh+p1xbGPw/ctfb0nnDViGbuLPdA=="</span>
@@ -548,18 +553,6 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
-
-      </div>
-      <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="javascript">javascript</a>
-          </div>
-      </div>
-    </div>
-  </body>
-</html>
-
 
       </div>
       <div class="dark-box">
